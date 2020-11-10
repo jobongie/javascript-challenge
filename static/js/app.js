@@ -10,17 +10,25 @@ var tableData = data;
 var $tbody = d3.select("tbody");
 var button = d3.select("#filter-btn");
 var inputFieldDate = d3.select("#datetime");
-var inputFieldCity = d3.select("#city");
+var inputFieldState = d3.select("#state");
+var inputFieldCountry = d3.select("#country");
+var inputFieldShape = d3.select("#shape");
+var inputFieldShape = d3.select("#duration");
+var inputFieldShape = d3.select("#description");
 
-// @TODO : Create said buttons for new said var inputs
-// var inputFieldState = d3.select("#state");
-// var inputFieldCountry = d3.select("#country");
-// var inputFieldShape = d3.select("shape");
+// Add reset button
+var inputFieldCity = d3.select("#city");var resetbtn = d3.select("#reset-btn");
+
 
 var columns = ["datetime", "city", "state", "country", "shape", "durationMinutes", "comments"]
 // console.log(columns);
 
 
+// Boilerplate reset filter
+$(document).on('click', '#clear-filter', function(){       
+    $('input[data-type="search"]').val('');
+    $('input[data-type="search"]').trigger("keyup");
+});
 
 // Inputing the data into the HTML
 var addData = (dataInput) => {
@@ -46,23 +54,23 @@ button.on("click", () => {
     // https://www.w3schools.com/jsref/jsref_tolowercase.asp
     var inputCity = inputFieldCity.property("value").toLowerCase().trim();
     // console.log(inputCity)
-    // var inputState = inputFieldState.property("value").toLowerCase().trim();
-    // var inputCountry = inputFieldCountry.property("value").toLowerCase().trim();
-    // var inputShape = inputFieldShape.property("value").toLowerCase().trim();
+    var inputState = inputFieldState.property("value").toLowerCase().trim();
+    var inputCountry = inputFieldCountry.property("value").toLowerCase().trim();
+    var inputShape = inputFieldShape.property("value").toLowerCase().trim();
     
 
     var filterDate = tableData.filter(tableData => tableData.datetime === inputDate);
     // console.log(filterDate)
     var filterCity = tableData.filter(tableData => tableData.city === inputCity);
     // console.log(filterCity)
-    // var filterState = tableData.filter(tableData => tableData.state === inputState);
-    // var filterCountry = tableData.filter(tableData => tableData.country === inputCountry);
-    // var filterShape = tableData.filter(tableData => tableData.shape === inputShape);
+    var filterState = tableData.filter(tableData => tableData.state === inputState);
+    var filterCountry = tableData.filter(tableData => tableData.country === inputCountry);
+    var filterShape = tableData.filter(tableData => tableData.shape === inputShape);
 
     var filterCombinedData = tableData.filter(tableData => tableData.datetime === inputDate && tableData.city === inputCity);
     // console.log(filterCombinedData)
-    // var filterCombinedData = tableData.filter(tableData => tableData.datetime === inputDate && tableData.city === inputCity && tableData.state === inputState && tableData.country === inputCountry && tableData.shape === inputShape);
-    // var filterCombinedDateState = tableData.filter(tableData => tableData.datetime === inputDate && tableData.state === inputState);
+    var filterCombinedData = tableData.filter(tableData => tableData.datetime === inputDate && tableData.city === inputCity && tableData.state === inputState && tableData.country === inputCountry && tableData.shape === inputShape);
+    var filterCombinedDateState = tableData.filter(tableData => tableData.datetime === inputDate && tableData.state === inputState);
 
     $tbody.html("");
 
