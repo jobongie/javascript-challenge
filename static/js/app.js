@@ -24,7 +24,7 @@ var columns = ["datetime", "city", "state", "country", "shape", "durationMinutes
 // console.log(columns);
 
 
-// Boilerplate reset filter
+// Boilerplate reset filter make specific to mine
 $(document).on('click', '#clear-filter', function(){       
     $('input[data-type="search"]').val('');
     $('input[data-type="search"]').trigger("keyup");
