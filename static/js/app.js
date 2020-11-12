@@ -58,7 +58,7 @@ button.on("click", () => {
     var inputCountry = inputFieldCountry.property("value").toLowerCase().trim();
     var inputShape = inputFieldShape.property("value").toLowerCase().trim();
     
-
+// add in 
     var filterDate = tableData.filter(tableData => tableData.datetime === inputDate);
     // console.log(filterDate)
     var filterCity = tableData.filter(tableData => tableData.city === inputCity);

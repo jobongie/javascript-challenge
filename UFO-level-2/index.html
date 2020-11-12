@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="/static/css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </head>
@@ -18,7 +18,7 @@
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="index.html">UFO Sightings
-            <img class="nav-ufo" src="static/images/ufo.svg">
+            <img class="nav-ufo" src="/static/images/ufo.svg">
           </a>
         </div>
       </div>
@@ -36,38 +36,32 @@
               <div class="panel-body">
                 <form>
                   <div class="form-group">
-                    <ul class="list-group" id="filters">
-                      <li class="filter list-group-item">
-                        <label for="date">Enter a Date</label>
-                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
-                        <label for="date">Enter a City</label>
-                        <input class="form-control" id="city" type="text" placeholder="Moab">
-                        <label for="date">Enter a State</label>
-                        <input class="form-control" id="state" type="text" placeholder="ut">
-                        <label for="date">Enter a Country</label>
-                        <input class="form-control" id="country" type="text" placeholder="us">
-                        <label for="date">Enter a Shape</label>
-                        <input class="form-control" id="shape" type="text" placeholder="Obelisk">
-                        <label for="date">Enter a Duration</label>
-                        <input class="form-control" id="duration" type="text" placeholder="15">
-                        <label for="date">Enter a Description</label>
-                        <input class="form-control" id="description" type="text" placeholder="It got Bessie">
-                      </li>
-                    </ul>
+                    <div data-role="content"> 
+                        <!--Filters with inputs--> 
+                        <ul class="list-group" id="filters">
+                          <ul data-role="listview" data-filter="true"></ul>
+                            <li class="filter list-group-item">
+                              <label for="date">Enter a Date</label>
+                              <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
+                              <label for="date">Enter a City</label>
+                              <input class="form-control" id="city" type="text" placeholder="Moab">
+                              <label for="date">Enter a State</label>
+                              <input class="form-control" id="state" type="text" placeholder="ut">
+                              <label for="date">Enter a Country</label>
+                              <input class="form-control" id="country" type="text" placeholder="us">
+                              <label for="date">Enter a Shape</label>
+                              <input class="form-control" id="shape" type="text" placeholder="Obelisk">
+                              <label for="date">Enter a Duration</label>
+                              <input class="form-control" id="duration" type="text" placeholder="15 (input in minutes, numbers only)">
+                              <label for="date">Enter a Description</label>
+                              <input class="form-control" id="description" type="text" placeholder="It got Bessie">
+                            </li>
+                          </ul>
+                        </ul>
+                      </div>                      
+                    </div>
                   </div>
                   <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
-                  <!--New spot? clear filter-->>
-                  <div data-role="content">
-                    <div data-role="fieldcontain">    
-                        <ul data-role="listview" data-filter="true">
-                            <li><a href=#>Cat</a></li>
-                            <li><a href=#>Dog</a></li>
-                            <li><a href=#>Mouse</a></li>
-                        </ul>
-                    </div>
-                    <div data-role="fieldcontain">       
-                       <input type="button" value="Clear" id="clear-filter"/>
-                    </div>
                 </form>
               </div>
             </div>
@@ -83,7 +77,7 @@
                   <th class="table-head">State</th>
                   <th class="table-head">Country</th>
                   <th class="table-head">Shape</th>
-                  <th class="table-head">Duration (value in miutes)</th>
+                  <th class="table-head">Duration</th>
                   <th class="table-head">Description</th>
                 </tr>
               </thead>
@@ -98,8 +92,8 @@
     </footer>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-  <script src="static/js/data.js"></script>
-  <script src="static/js/app.js"></script>
+  <script src="/static/js/data.js"></script>
+  <script src="/static/js/app.js"></script>
 </body>
 
 </html>
