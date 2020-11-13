@@ -6,6 +6,8 @@ var tableData = data;
 function put_data(my_data) {
   var tbody = document.getElementById('ufo-table').getElementsByTagName('tbody')[0]
 
+  
+  // Loops through data and inserts into table by row
   for (let index = 0; index < my_data.length; index++) {
       const element = my_data[index];
 
@@ -19,13 +21,11 @@ function put_data(my_data) {
 }
 
 function filter_data() {
-  date_query = document.getElementById('date').value;
+  date_query = document.getElementById('datetime').value;
   city_query = document.getElementById('city').value;
   state_query = document.getElementById('state').value;
   country_query = document.getElementById('country').value;
   shape_query = document.getElementById('shape').value;
-  
-
 
   filtered_data=[...data];;
 
@@ -33,7 +33,7 @@ function filter_data() {
   for (let index = 0; index < filtered_data.length; index++) {
       const element = filtered_data[index];
 
-      if (date_query!="" && element['date']!=date_query) {
+      if (date_query!="" && element['datetime']!=date_query) {
           filtered_data[index]=-1;
       }
       if (city_query!="" && element['city']!=city_query) {
