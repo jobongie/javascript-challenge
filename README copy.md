@@ -1,97 +1,57 @@
-# JavaScript and DOM Manipulation
-<!-- TOC -->autoauto- [JavaScript and DOM Manipulation](#javascript-and-dom-manipulation)auto    - [Repository Structure](#repository-structure)auto    - [static](#static)auto            - [css](#css)auto            - [images](#images)auto            - [js](#js)auto        - [UFO-level-1](#ufo-level-1)auto            - [static](#static-1)auto                - [css](#css-1)auto        - [UFO-level-2](#ufo-level-2)auto        - [Before You Begin](#before-you-begin)auto        - [Before You Begin](#before-you-begin-1)auto        - [Level 1: Automatic Table and Date Search (Required)](#level-1-automatic-table-and-date-search-required)auto        - [Level 2: Multiple Search Categories (Optional)](#level-2-multiple-search-categories-optional)auto        - [Dataset](#dataset)autoauto<!-- /TOC -->
+# 1. JavaScript and DOM Manipulation
+<!-TOC -->
+- [1. JavaScript and DOM Manipulation](#1-javascript-and-dom-manipulation)    
+    - [1.1. Repository Structure](#11-repository-structure)    
+    - [1.2. static](#12-static)            
+        - [1.2.0.1. css](#1201-css)          
+        - [1.2.0.2. images](#1202-images)           
+        - [1.2.0.3. js](#1203-js)       
+- [1.2.1. UFO-level-1](#121-ufo-level-1)            
+- [1.2.1.1. static](#1211-static)                
+- [1.2.1.1.1. css](#12111-css)              
+- [1.2.1.1.2. images](#12112-images)                
+- [1.2.1.1.3. js](#12113-js)               
+- [1.2.1.1.4. index.html](#12114-indexhtml)        
+- [1.2.2. UFO-level-2](#122-ufo-level-2)            
+- [1.2.2.1. static](#1221-static)                
+- [1.2.2.1.1. css](#12211-css)                
+- [1.2.2.1.2. images](#12212-images)                
+- [1.2.2.1.3. js](#12213-js)                
+- [1.2.2.1.4. index.html](#12214-indexhtml)
+<!-- /TOC -->
+## 1.1. Repository Structure
 
-## Repository Structure
+## 1.2. static
 
-## static
+#### 1.2.0.1. css 
+    style.css
+#### 1.2.0.2. images
+    nasa.jpg
+    ufo.svg
+#### 1.2.0.3. js
+    app.js
+    data.js
 
-#### css 
-   
-#### images
- 
-#### js
- 
+### 1.2.1. UFO-level-1
+#### 1.2.1.1. static
+##### 1.2.1.1.1. css
+    style.css
+##### 1.2.1.1.2. images
+    nasa.jpg
+    ufo.svg
+##### 1.2.1.1.3. js
+    app.js
+    data.js
+##### 1.2.1.1.4. index.html
 
-### UFO-level-1
-#### static
-##### css
-        *style.css
-**images**
-    *nasa.jpg
-    *ufo.svg
-**js**
-    *app.js
-    *data.js
-*index.html
-
-### UFO-level-2
-    **static**
-        **css**
-            *style.css
-    **images**
-        *nasa.jpg
-        *ufo.svg
-    **js**
-        *app.js
-        *data.js
-    *index.html
-
-### Before You Begin
-
-1. Create a new repository for this project called `javascript-challenge`. **Do not add this homework to an existing repository**.
-
-2. Clone the new repository to your computer.
-
-
-
-WAKE UP SHEEPLE! The extra-terrestrial menace has come to Earth and we here at `ALIENS-R-REAL` have collected all of the eye-witness reports we could to prove it! All we need to do now is put this information online for the world to see and then the matter will finally be put to rest.
-
-There is just one tiny problem though... our collection is too large to search through manually. Even our most dedicated followers are complaining that they are having trouble locating specific reports in this mess.
-
-That's why we are hiring you. We need you to write code that will create a table dynamically based upon a [dataset we provide](StarterCode/static/js/data.js). We also need to allow our users to filter the table data for specific values. There's a catch though... we only use pure JavaScript, HTML, and CSS, and D3.js on our web pages. They are the only coding languages which can be trusted.
-
-You can handle this... right? The planet Earth needs to know what we have found!
-
-
-### Before You Begin
-
-1. Create a new repository for this project called `javascript-challenge`. **Do not add this homework to an existing repository**.
-
-2. Clone the new repository to your computer.
-
-3. Inside your local git repository, create a directory for the Javascript challenge. Use the folder names to correspond to the challenges: **UFO-level-1** and **UFO-level-2**.
-
-4. Add your **html** files to this folder as well as your static folder containing your javascript. This will be the main script to run for analysis.
-
-5. Push the above changes to GitHub or GitLab.
-
-6. Ensure your repository has regular commits (i.e. 20+ commits) and a thorough README.md file
-
-### Level 1: Automatic Table and Date Search (Required)
-
-* Create a basic HTML web page or use the [index.html](StarterCode/index.html) file provided (we recommend building your own custom page!).
-
-* Using the UFO dataset provided in the form of an array of JavaScript objects, write code that appends a table to your web page and then adds new rows of data for each UFO sighting.
-
-  * Make sure you have a column for `date/time`, `city`, `state`, `country`, `shape`, and `comment` at the very least.
-
-* Use a date form in your HTML document and write JavaScript code that will listen for events and search through the `date/time` column to find rows that match user input.
-
-### Level 2: Multiple Search Categories (Optional)
-
-* Complete all of Level 1 criteria.
-
-* Using multiple `input` tags and/or select dropdowns, write JavaScript code so the user can to set multiple filters and search for UFO sightings using the following criteria based on the table columns:
-
-  1. `date/time`
-  2. `city`
-  3. `state`
-  4. `country`
-  5. `shape`
-
-- - -
-
-### Dataset
-
-* [UFO Sightings Data](StarterCode/static/js/data.js)
-
+### 1.2.2. UFO-level-2
+#### 1.2.2.1. static
+##### 1.2.2.1.1. css
+    style.css
+##### 1.2.2.1.2. images
+    nasa.jpg
+    ufo.svg
+##### 1.2.2.1.3. js
+    app.js
+    data.js
+##### 1.2.2.1.4. index.html
