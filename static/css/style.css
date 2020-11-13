@@ -20,11 +20,11 @@ body {
 
 /* The footer is positioned at the bottom of the page */
 .footer {
-  position: relative;
+  position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
-  min-height: 75px;
+  min-height: 100px;
   background: #4e5d6c;
 }
 
@@ -49,7 +49,7 @@ body {
   bottom: 5px;
   left: 150px;
   width: 35px;
-  color: grey;
+  color: white;
 }
 
 /* Adding styles to the aside and filter form */
@@ -80,7 +80,7 @@ select {
 #table-area th:first-child,
 #table-area th:nth-child(2),
 #table-area th:nth-child(6) {
-  min-width: 100px;
+  min-width: 70px;
 }
 
 .loader {
@@ -88,7 +88,7 @@ select {
 }
 
 .margin-top-50 {
- margin-top: 50px;
+  margin-top: 50px;
 }
 
 /* The styles for the parallax */
