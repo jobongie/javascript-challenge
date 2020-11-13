@@ -1,18 +1,16 @@
 # JavaScript and DOM Manipulation
-<a id="DOM Manipulation" name="header"></a>
+<!-- TOC -->autoauto- [JavaScript and DOM Manipulation](#javascript-and-dom-manipulation)auto    - [Repository Structure](#repository-structure)auto    - [static](#static)auto            - [css](#css)auto            - [images](#images)auto            - [js](#js)auto        - [UFO-level-1](#ufo-level-1)auto            - [static](#static-1)auto                - [css](#css-1)auto        - [UFO-level-2](#ufo-level-2)auto        - [Before You Begin](#before-you-begin)auto        - [Before You Begin](#before-you-begin-1)auto        - [Level 1: Automatic Table and Date Search (Required)](#level-1-automatic-table-and-date-search-required)auto        - [Level 2: Multiple Search Categories (Optional)](#level-2-multiple-search-categories-optional)auto        - [Dataset](#dataset)autoauto<!-- /TOC -->
 
 ## Repository Structure
 
 ## static
 
 #### css 
-    style.css
+   
 #### images
-    nasa.jpg
-    ufo.svg
+ 
 #### js
-    app.js
-    data.js
+ 
 
 ### UFO-level-1
 #### static
@@ -96,3 +94,4 @@ You can handle this... right? The planet Earth needs to know what we have found!
 ### Dataset
 
 * [UFO Sightings Data](StarterCode/static/js/data.js)
+
