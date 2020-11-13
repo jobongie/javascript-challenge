@@ -19,7 +19,7 @@ function put_data(my_data) {
 }
 
 function filter_data() {
-    date_query = document.getElementById('datetime').value;
+    date_query = document.getElementById('date').value;
     city_query = document.getElementById('city').value;
     state_query = document.getElementById('state').value;
     country_query = document.getElementById('country').value;
@@ -33,13 +33,13 @@ function filter_data() {
         for (let index = 0; index < data.length; index++) {
             const element = data[index];
 
-            if (date_query!="" && city_query=="" && element['datetime']==date_query) {
+            if (date_query!="" && city_query=="" && element['date']==date_query) {
                 filtered_data.push(element);
             }
             if (city_query!="" && date_query=="" && element['city']==city_query) {
                 filtered_data.push(element);
             }
-            if (date_query!="" && city_query!="" && element['datetime']==date_query && element['city']==city_query) {
+            if (date_query!="" && city_query!="" && element['date']==date_query && element['city']==city_query) {
                 filtered_data.push(element);
             }
         }

@@ -35,7 +35,7 @@ button.on("click", function() {
     // console.log input value
     console.log(inputValue);
     // Filter Data with datetime equal to input value
-    var filteredData = tableData.filter(sighting => sighting.datetime === inputValue);
+    var filteredData = tableData.filter(sighting => sighting.date === inputValue);
     // console.log filter values
     console.log(filteredData);
 
